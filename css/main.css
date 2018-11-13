@@ -1,4 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+
 body, h1, h2, h3, h4, h5, p, blockquote, pre, hr, dl, dd, ol, ul, figure{
   margin: 0;
   padding: 0;
+}
+
+html {
+  height: 100vh;
+  padding: 1em;
+}
+
+header {
+  margin: 0;
+  font-size: 75px;
+  text-align: center;
+  font-family: raleway;
+  color: #ff6c2c;
+}
+
+hr {
+
+}
+
+body {
+  max-width: 500px;
+  max-height: 100vh;
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  margin-top: 10px;
+  color: #696767;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 25px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 20 auto;
+}
+
+input {
+  background-color: #ffffff;
+}
+
+form input {
+  width: 200px;
+  height: 25px;
+  text-align: center;
+}
+
+body {
+  top: 50%;
+  left: 50%;
 }

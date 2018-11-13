@@ -1,5 +1,7 @@
 const input = document.querySelector('input'); //grab the input field
 
+const cursor = input.focus();
+
 input.addEventListener('keypress', eventHandler); //connect the input to the enter key
 
 function clearField(input) {
