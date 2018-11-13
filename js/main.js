@@ -10,19 +10,18 @@ function clearField(input) {
 
 function eventHandler (event) { //when you press enter, it gives you a response
   if (event.which === 13) {
+    const p = document.createElement('p');
     if (input.value.length === 0) { //if the input field is empty, it will give you this response
-      const p = document.createElement('p');
+      p.classList.add('red');
       p.innerText = `The text field is empty. Please enter name.`;
-      const form = document.querySelector('form');
-      form.append(p);
-      event.preventDefault();
+
     }
     else {
-      const p = document.createElement('p'); // If you put your name in, it will say this and input a p tag
       p.innerText = `Hello ${input.value}, nice to meet you.`;
-      const form = document.querySelector('form');
-      form.append(p);
-      event.preventDefault();
     }
+    const form = document.querySelector('form');
+    form.append(p);
+    event.preventDefault();
+    form.reset();
   }
 }
